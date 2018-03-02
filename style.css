@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+#drum-machine{
+    border:2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 700px
+}
+
+.key{
+    border:1px solid blue;
+    height:95%;
+    width:12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.07s;
+}
+
+.playing{
+    border-color:orange;
+    box-shadow: 0 0 10px orange;
+    transform: scale(1.1);
+}
